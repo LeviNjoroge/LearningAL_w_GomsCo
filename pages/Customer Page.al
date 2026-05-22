@@ -22,18 +22,21 @@ page 50102 "Customerr Page"
                 field(Company;Rec.Company){}
             }
         }
+        area(FactBoxes){
+            Description = 'Sets the description. This description is for internal use and does not appear to end-users.';
+        }
     }
     
     actions
     {
         area(Processing)
         {
-            action(ActionName)
+            action(Test)
             {
                 
                 trigger OnAction()
                 begin
-                    
+                    Message('Hello, this has jus been triggered');
                 end;
             }
         }
