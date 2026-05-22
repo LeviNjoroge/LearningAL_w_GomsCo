@@ -9,12 +9,14 @@ page 50102 "Customerr Page"
     {
         area(Content)
         {
-            field(CustomerID;Rec.CustomerID){}
-            field(CustomerName;Rec.CustomerName){}
-            field(Gender; Rec.Gender){}
-            field(Age; Rec.Age){}
-            field("Height(M)"; Rec."Height(M)"){}
-            field(Company;Rec.Company){}
+            group(General){
+                field(CustomerID;Rec.CustomerID){}
+                field(CustomerName;Rec.CustomerName){}
+                field(Gender; Rec.Gender){}
+                field(Age; Rec.Age){}
+                field("Height(M)"; Rec."Height(M)"){}
+                field(Company;Rec.Company){}
+            }
         }
     }
     
