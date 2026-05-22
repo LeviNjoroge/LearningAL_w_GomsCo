@@ -9,12 +9,16 @@ page 50102 "Customerr Page"
     {
         area(Content)
         {
-            group(General){
+            group("Identification Info"){
                 field(CustomerID;Rec.CustomerID){}
                 field(CustomerName;Rec.CustomerName){}
                 field(Gender; Rec.Gender){}
+            }
+            group("Curr snapshot"){
                 field(Age; Rec.Age){}
                 field("Height(M)"; Rec."Height(M)"){}
+            }
+            group("Workplace Info"){
                 field(Company;Rec.Company){}
             }
         }
