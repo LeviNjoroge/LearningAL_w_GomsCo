@@ -32,5 +32,4 @@ codeunit 50121 Maths
         result := Round(result, 0.01); // round off the numbers
         exit(result);
     end;
-
 }
