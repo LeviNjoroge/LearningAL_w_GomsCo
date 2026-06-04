@@ -1,11 +1,9 @@
-codeunit 50120 MyCodeunit
+codeunit 50120 AddtionCodeUnit67
 {
-    Subtype = Test;
     trigger OnRun()
     var
         num1: Integer;
         num2: Integer;
-        add
     begin
         num1 := 6;
         num2 := 7;
@@ -21,6 +19,5 @@ codeunit 50120 MyCodeunit
         Message('The sum of %1 and %2 is %3', num1, num2, sum);
         exit(sum);
     end;
-    
     
 }
