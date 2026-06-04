@@ -1,4 +1,4 @@
-page 50102 "Customerr Page"
+page 50120 "Customerr Page"
 {
     PageType = Card;
     ApplicationArea = All;

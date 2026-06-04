@@ -1,4 +1,4 @@
-table 50102 Customerr
+table 50120 Customerr
 {
     Caption = 'Customers';
     Description = 'Contains details about customers!';
