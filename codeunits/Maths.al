@@ -24,11 +24,12 @@ codeunit 50121 Maths
         exit(result);
     end;
 
-    procedure Divide(int1: Integer; int2: Integer) : Integer
+    procedure Divide(int1: Integer; int2: Integer) : Decimal
     var
-        result: Integer;
+        result: Decimal;
     begin
         result := int1 / int2;
+        result := Round(result, 0.01); // round off the numbers
         exit(result);
     end;
 

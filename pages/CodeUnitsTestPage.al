@@ -22,7 +22,7 @@ page 50121 "Code Unit Tests Page"
                 begin
                     num1 := 12;
                     num2 := 7;
-                    Message('The sum of %1 and %2 is %3',num1, num2, maths.Add(num1,num2));
+                    Message('%1 + %2 = %3',num1, num2, maths.Add(num1,num2));
                 end;
             }
             action(Subtraction)
@@ -46,10 +46,13 @@ page 50121 "Code Unit Tests Page"
             action(Division)
             {
                 trigger OnAction()
+                var
+                    quotient: Decimal;
                 begin
                     num1 := 12;
                     num2 := 7;
-                    Message('The quotient of %1 and %2 is %3',num1, num2, maths.Divide(num1,num2));
+                    quotient := maths.Divide(num1,num2);
+                    Message('The quotient of %1 and %2 is %3',num1, num2, quotient);
                 end;
             }
         }
