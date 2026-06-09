@@ -1,0 +1,14 @@
+name: Building the Gosmco Practice Project
+
+on: 
+    push:
+        branches:
+            main
+
+jobs:
+    build:
+        name: Create an app after building it automatically, on "git push"
+        runs-on: self-hosted
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
