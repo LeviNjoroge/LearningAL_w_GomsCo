@@ -1,6 +1,6 @@
 table 50120 Customerr
 {
-    Caption = 'Customers';
+    Caption = 'Customerr';
     Description = 'Contains details about customers!';
     DataClassification = ToBeClassified;
     
